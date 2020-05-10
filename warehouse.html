@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<link href="bootstrap.min (1).css" rel="stylesheet" type="text/css">
+		<title>Warehouse Management System</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div class="col-sm-12">
+				<div class="card">
+				<div class="card-body">
+				<fieldset>
+					<legend>Warehouse Status</legend>
+					<div class="form-group row">
+						<div class="col-md-3">
+							<select class="form-control" id="product">
+								<option value="TM">Tomato</option>
+								<option value="LT">Lettuce</option>
+								<option value="PO">Potato</option>
+								<option value="ON">Onion</option>
+								<option value="CB">Cabbage</option>
+							</select>
+						</div>
+						<div class="col-md-4">
+							<p>Current stock is <span id="stock">??</span> cases.</p>
+						</div>
+					</div>
+					<div class="form-group row">
+						<label for="amount" class="col-form-label col-md-2">Amount:</label>
+						<div class="col-sm-3">
+							<input type="number" class="form-control" name="amount" id="amount" />
+						</div>
+						<div class="col-md-0">
+							<button class="btn btn-primary" id="in">In</button>
+						</div>
+						<div class="col-md-1">
+							<button class="btn btn-primary" id="out">Out</button>
+						</div>
+					</div>
+				</fieldset>
+				</div>
+				</div>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="warehouse.js"></script>
+	</body>
+</html>
